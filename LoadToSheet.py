@@ -1,7 +1,7 @@
 import pandas as pd
 
-#attendance csv file goes here ↓↓↓↓↓↓
-attendanceForm = '9_5 Lunch BETA Attendance Form (Responses) - Form Responses 1.csv'
+#↓↓↓↓↓↓ attendance csv file path goes here
+attendanceForm = ''
 
 #opens csv and extracts emails column
 attForm = (pd.read_csv(attendanceForm))
@@ -15,8 +15,8 @@ for i, num in enumerate(emails):
 att = list(set(att))
 
 
-#attendance csv file goes here ↓↓↓↓↓↓ <- if updated for new members needs to be re-downloaded
-betaLog = 'Beta Attendance 2024-2025 - Sheet1.csv'
+# ↓↓↓↓↓↓ attendance csv file path goes here <- if updated for new members needs to be re-downloaded
+betaLog = ''
 
 #opens csv and extracts student nums column
 log = (pd.read_csv(betaLog))
